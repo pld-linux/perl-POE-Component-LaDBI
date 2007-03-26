@@ -10,14 +10,10 @@ Summary:	POE::Component::LaDBI - POE Component that spawns a perl subprocess to 
 Name:		perl-POE-Component-LaDBI
 Version:	1.2.1
 Release:	0.1
-# same as perl (REMOVE THIS LINE IF NOT TRUE)
-#License:	GPL v1+ or Artistic
-# no license information in package (or i didnt saw any)
-License:	-
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5703be6ff1b6140519023c917f4b3854
-# that diff contain various fixes,
 Patch0:		perl-POE-Component-LaDBI.patch 
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
