@@ -1,0 +1,62 @@
+diff -Nur POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI/Commands.pm POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI/Commands.pm
+--- POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI/Commands.pm	2002-08-24 18:41:58.000000000 +0200
++++ POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI/Commands.pm	2007-03-22 22:06:44.402392000 +0100
+@@ -1,6 +1,5 @@
+ package POE::Component::LaDBI::Commands;
+ 
+-use v5.6.0;
+ use strict;
+ use warnings;
+ 
+diff -Nur POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI/Engine.pm POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI/Engine.pm
+--- POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI/Engine.pm	2004-03-21 04:56:19.000000000 +0100
++++ POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI/Engine.pm	2007-03-22 22:06:41.998241750 +0100
+@@ -1,6 +1,5 @@
+ package POE::Component::LaDBI::Engine;
+ 
+-use v5.6.0;
+ use strict;
+ use warnings;
+ 
+diff -Nur POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI/Request.pm POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI/Request.pm
+--- POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI/Request.pm	2004-03-21 04:56:46.000000000 +0100
++++ POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI/Request.pm	2007-03-22 22:06:39.638094250 +0100
+@@ -1,6 +1,5 @@
+ package POE::Component::LaDBI::Request;
+ 
+-use v5.6.0;
+ use strict;
+ use warnings;
+ 
+diff -Nur POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI/Response.pm POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI/Response.pm
+--- POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI/Response.pm	2004-03-21 04:57:07.000000000 +0100
++++ POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI/Response.pm	2007-03-22 22:06:34.609780000 +0100
+@@ -1,6 +1,5 @@
+ package POE::Component::LaDBI::Response;
+ 
+-use v5.6.0;
+ use strict;
+ use warnings;
+ 
+diff -Nur POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI.pm POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI.pm
+--- POE-Component-LaDBI-1.2.1.ori/lib/POE/Component/LaDBI.pm	2004-07-18 22:24:50.000000000 +0200
++++ POE-Component-LaDBI-1.2.1.mod/lib/POE/Component/LaDBI.pm	2007-03-22 22:06:17.644719750 +0100
+@@ -1,6 +1,5 @@
+ package POE::Component::LaDBI;
+ 
+-use 5.006_000;
+ use strict;
+ use warnings;
+ 
+diff -Nur POE-Component-LaDBI-1.2.1.ori/Makefile.PL POE-Component-LaDBI-1.2.1.mod/Makefile.PL
+--- POE-Component-LaDBI-1.2.1.ori/Makefile.PL	2004-02-16 00:23:12.000000000 +0100
++++ POE-Component-LaDBI-1.2.1.mod/Makefile.PL	2007-03-22 22:05:47.534838000 +0100
+@@ -11,7 +11,7 @@
+ our $NO_DB_TESTS_FN;
+ require "ladbi_config.pl";
+ 
+-if (read_answer_yes("Do you want to test this module against a Database?"))
++if (0) #read_answer_yes("Do you want to test this module against a Database?"))
+   {
+     unlink($NO_DB_TESTS_FN);
+     my $build_config_p = 1;
