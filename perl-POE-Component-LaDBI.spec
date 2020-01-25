@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	POE
 %define	pnam	Component-LaDBI
 Summary:	POE::Component::LaDBI - POE Component that spawns a perl subprocess to handle non-blocking access to the DBI API
